@@ -1,10 +1,14 @@
-package net.cubosoft-plugin-jeff-macaddress;
+package net.jeffmacaddress;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
+
+import java.net.NetworkInterface;
+import java.util.Collections;
+import java.util.List;
 
 @NativePlugin
 public class Jeff_Macaddress extends Plugin {
@@ -14,7 +18,8 @@ public class Jeff_Macaddress extends Plugin {
       //  String value = call.getString("value");
 
         JSObject ret = new JSObject();
-        ret.put("MacAddress",this,getMacAddr());
+        ret.put("MacAddress",this.getMacAddr());
+
       //  ret.put("value", value);
         call.success(ret);
     }

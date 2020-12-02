@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-plugin-jeff-macaddress",
+  "name": "@capacitor/plugin-jeff-macaddress",
   "version": "0.0.1",
   "description": "Obtencion de mac en android",
   "main": "dist/plugin.js",
